@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('/fonts/gilroy-bold.ttf');
+
+$font-family: 'Lato';
+$font-34: 34px;
+$font-18: 18px;
+$font-14: 14px;
+$font-color: #828282;
+$font-color-activ: #070707;
+$bgcolor: #F6F6F6;
+
+%title {
+    font-size: $font-34;
+    color: $font-color-activ;
+    font-weight: 900;
+}
+%par {
+    font-size: $font-18;
+    color: $font-color-activ;
+    font-weight: 600;
+}
+%small {
+    font-size: $font-14;
+    color: $font-color;
+    font-weight: 500;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+}
+
+.header, .contacts, .about-me, .portfolio, .skills {
+    // width: 1445px;
+    width: auto;
+}
+
+.wrapper {
+    width: 944px;
+    margin: 0 auto;
+}
+.header{
+    margin-bottom: 104px;
+
+    &__nav {
+        position: fixed;
+        // width: 944px;
+        width: 72vw;
+        background-color: #fff;
+        opacity: .8;
+
+        padding-top: 34px;
+        margin-bottom: 34px;
+        
+        & .wrapper {
+            margin: 0;
+        }
+    }
+    &__nav ul {
+        font-size: $font-18;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__nav a {
+        color: $font-color;
+        font-family: $font-family;
+        font-weight: 700;
+    }
+    &__nav a:hover {
+        color: $font-color-activ;
+    }
+    &__line {
+        margin-top: 34px;
+        max-width: 944px;
+        height: 1px;
+        background-color: #828282;
+        // border: 1px solid #828282;
+        // margin-bottom: 34px;
+    }
+    &__info {
+        padding-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 49px;
+    }
+    &__name-author {
+        font-family: 'Lato';
+        font-weight: 800;
+        font-size: 47px;
+        width: 123px;
+    }
+    &__wrapper-p p {
+        color: $font-color-activ;
+        font-size: $font-18;
+        font-weight: 500;
+    }
+    &__select-lang {
+        // transform: rotate(-90deg);
+        writing-mode: vertical-lr;
+    }
+    &__ru a, &__eng a {
+        color: $font-color;
+        font-weight: 700;
+    }
+    &__ru a:hover, &__eng a:hover {
+        color: $font-color-activ;
+    }
+    &__band {
+        color: $font-color-activ;
+        font-weight: 700;
+    }
+}
+.about-me {
+    background-color: $bgcolor;
+    padding: 120px 0 110px 0;
+    margin-bottom: 91px;
+    & .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        @extend %title;
+        margin-bottom: 18px;
+    }
+    &__wrapper-p {
+        display: flex;
+        flex-direction: column;
+        text-align: center; 
+    }
+    &__wrapper-p p {
+        @extend %par;
+        margin-top: 30px;
+        line-height: 25px;
+    }
+}
+.skills {
+    & .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        @extend %title;
+        margin-bottom: 70px
+    }
+    &__p {
+        @extend %par;
+        margin-bottom: 83px;
+    }
+    &__cards {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 111px;
+    }
+    &__item {
+        text-align: center;
+    }
+    &__item p {
+        @extend %par;
+        color: $font-color;
+        margin: auto;
+        margin-bottom: 41px;
+        width: 103px;
+    }
+   
+    &__item:last-child p {
+        margin-bottom: 63px;
+    }
+
+
+    &__img {
+        margin-bottom: 23px;
+    }
+}
+.portfolio {
+    background-color: $bgcolor;
+    padding: 113px 0 96px 0;
+    margin-bottom: 114px;
+
+    &__title {
+        @extend %title;
+        text-align: center;
+        margin-bottom: 64px;
+    }
+    &__site {
+        margin-bottom: 45px;
+    }
+    &__link {
+        text-align: center;
+        margin-bottom: 100px;
+        & a {
+            @extend %par;
+            text-decoration: underline;
+            flex-direction: column;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.contacts {
+    & .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        @extend %title;
+        margin-bottom: 20px;
+    }
+    &__p {
+        @extend %par;
+        font-weight: 600;
+        &:nth-child(3) {
+            margin-bottom: 30px;
+        }
+    }
+    &__button {
+        @extend %par;
+        background-color: $font-color-activ;
+        width: 180px;
+        padding: 12px 0 13px;
+        border-radius: 30px;
+        color: $bgcolor;
+        margin-bottom: 86px;
+        text-align: center;
+    }
+
+    &__soc-net {
+        width: 313px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 46px;
+    }
+    &__wrapper-p {
+        @extend %small;
+        text-align: center;
+        margin-bottom: 120px;
+    }
+}
+
+
+@media screen and (max-width: 1400px) {
+
+    .wrapper {
+        max-width: 944px;
+        width: auto;
+    }
+    .header {
+
+        &__img {
+            
+            width: 100%;
+            & img {
+                width: 100%;
+            }
+        }
+        &__nav {
+            width: 100vw;
+        }
+        &__line {
+            width: 100%;
+        }
+    }
+    .portfolio__site {
+        width: 100%;
+        & img {
+            width: 100%;
+        }
+    }
+    .skiils__cards {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header {
+        margin-bottom: 83px;
+
+        & .wrapper {
+            padding: 0 20px 0 20px;
+        }
+        &__nav {
+            display: none;
+        }
+        &__info {
+            padding-top: 65px;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        &__name-author {
+            margin-bottom: 23px;
+        }
+        &__select-lang {
+            display: none;
+        }
+    }
+    .about-me {
+        padding: 81px 0 75px;
+        text-align: center;
+        line-height: 21px;
+        margin-bottom: 80px;
+    }
+    .skills {
+        height: auto;
+        
+        & .wrapper {
+            height: auto;
+        }
+        &__title {
+            margin-bottom: 25px;
+        }
+        &__p {
+            margin-bottom: 60px;
+        }    
+        &__cards {
+            flex-direction: column;
+            height: auto;
+            margin-bottom: 70px;
+        }
+        &__item p {
+            margin-bottom: 30px;
+        }
+        &__stars {
+            margin-bottom: 80px;
+        }
+    }
+    .portfolio {
+        margin-bottom: 80px;
+        padding: 113px 20px 96px;
+    }
+    .contacts {
+        &__wrapper-p {
+            margin-bottom: 100px;
+        }
+    }
+}

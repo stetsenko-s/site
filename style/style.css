@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("/fonts/gilroy-bold.ttf");
+.about-me__title, .skills__title, .portfolio__title, .contacts__title {
+  font-size: 34px;
+  color: #070707;
+  font-weight: 900; }
+
+.about-me__wrapper-p p, .skills__p, .skills__item p, .portfolio__link a, .contacts__p, .contacts__button {
+  font-size: 18px;
+  color: #070707;
+  font-weight: 600; }
+
+.contacts__wrapper-p {
+  font-size: 14px;
+  color: #828282;
+  font-weight: 500; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Lato";
+  margin: 0;
+  padding: 0; }
+
+.header, .contacts, .about-me, .portfolio, .skills {
+  width: auto; }
+
+.wrapper {
+  width: 944px;
+  margin: 0 auto; }
+
+.header {
+  margin-bottom: 104px; }
+  .header__nav {
+    position: fixed;
+    width: 72vw;
+    background-color: #fff;
+    opacity: .8;
+    padding-top: 34px;
+    margin-bottom: 34px; }
+    .header__nav .wrapper {
+      margin: 0; }
+  .header__nav ul {
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .header__nav a {
+    color: #828282;
+    font-family: "Lato";
+    font-weight: 700; }
+  .header__nav a:hover {
+    color: #070707; }
+  .header__line {
+    margin-top: 34px;
+    max-width: 944px;
+    height: 1px;
+    background-color: #828282; }
+  .header__info {
+    padding-top: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 49px; }
+  .header__name-author {
+    font-family: 'Lato';
+    font-weight: 800;
+    font-size: 47px;
+    width: 123px; }
+  .header__wrapper-p p {
+    color: #070707;
+    font-size: 18px;
+    font-weight: 500; }
+  .header__select-lang {
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr; }
+  .header__ru a, .header__eng a {
+    color: #828282;
+    font-weight: 700; }
+  .header__ru a:hover, .header__eng a:hover {
+    color: #070707; }
+  .header__band {
+    color: #070707;
+    font-weight: 700; }
+
+.about-me {
+  background-color: #F6F6F6;
+  padding: 120px 0 110px 0;
+  margin-bottom: 91px; }
+  .about-me .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .about-me__title {
+    margin-bottom: 18px; }
+  .about-me__wrapper-p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center; }
+  .about-me__wrapper-p p {
+    margin-top: 30px;
+    line-height: 25px; }
+
+.skills .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+.skills__title {
+  margin-bottom: 70px; }
+.skills__p {
+  margin-bottom: 83px; }
+.skills__cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 111px; }
+.skills__item {
+  text-align: center; }
+.skills__item p {
+  color: #828282;
+  margin: auto;
+  margin-bottom: 41px;
+  width: 103px; }
+.skills__item:last-child p {
+  margin-bottom: 63px; }
+.skills__img {
+  margin-bottom: 23px; }
+
+.portfolio {
+  background-color: #F6F6F6;
+  padding: 113px 0 96px 0;
+  margin-bottom: 114px; }
+  .portfolio__title {
+    text-align: center;
+    margin-bottom: 64px; }
+  .portfolio__site {
+    margin-bottom: 45px; }
+  .portfolio__link {
+    text-align: center;
+    margin-bottom: 100px; }
+    .portfolio__link a {
+      text-decoration: underline;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .portfolio__link:last-child {
+      margin-bottom: 0; }
+
+.contacts .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+.contacts__title {
+  margin-bottom: 20px; }
+.contacts__p {
+  font-weight: 600; }
+  .contacts__p:nth-child(3) {
+    margin-bottom: 30px; }
+.contacts__button {
+  background-color: #070707;
+  width: 180px;
+  padding: 12px 0 13px;
+  border-radius: 30px;
+  color: #F6F6F6;
+  margin-bottom: 86px;
+  text-align: center; }
+.contacts__soc-net {
+  width: 313px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 46px; }
+.contacts__wrapper-p {
+  text-align: center;
+  margin-bottom: 120px; }
+
+@media screen and (max-width: 1400px) {
+  .wrapper {
+    max-width: 944px;
+    width: auto; }
+
+  .header__img {
+    width: 100%; }
+    .header__img img {
+      width: 100%; }
+  .header__nav {
+    width: 100vw; }
+  .header__line {
+    width: 100%; }
+
+  .portfolio__site {
+    width: 100%; }
+    .portfolio__site img {
+      width: 100%; }
+
+  .skiils__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+@media screen and (max-width: 400px) {
+  .header {
+    margin-bottom: 83px; }
+    .header .wrapper {
+      padding: 0 20px 0 20px; }
+    .header__nav {
+      display: none; }
+    .header__info {
+      padding-top: 65px;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .header__name-author {
+      margin-bottom: 23px; }
+    .header__select-lang {
+      display: none; }
+
+  .about-me {
+    padding: 81px 0 75px;
+    text-align: center;
+    line-height: 21px;
+    margin-bottom: 80px; }
+
+  .skills {
+    height: auto; }
+    .skills .wrapper {
+      height: auto; }
+    .skills__title {
+      margin-bottom: 25px; }
+    .skills__p {
+      margin-bottom: 60px; }
+    .skills__cards {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      height: auto;
+      margin-bottom: 70px; }
+    .skills__item p {
+      margin-bottom: 30px; }
+    .skills__stars {
+      margin-bottom: 80px; }
+
+  .portfolio {
+    margin-bottom: 80px;
+    padding: 113px 20px 96px; }
+
+  .contacts__wrapper-p {
+    margin-bottom: 100px; } }
+
+/*# sourceMappingURL=style.css.map */
